@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EasySignInWithApple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ilu-5J-1go">
+                                <rect key="frame" x="72" y="428" width="270" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="HYz-wi-STV"/>
+                                    <constraint firstAttribute="height" constant="40" id="HlI-rq-llh"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ilu-5J-1go" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gph-Ij-g3C"/>
+                            <constraint firstItem="ilu-5J-1go" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hMH-a2-9ti"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="stackView" destination="ilu-5J-1go" id="USI-hX-IMn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138"/>
+        </scene>
+        <!--My Profile View Controller-->
+        <scene sceneID="9J5-5W-2jX">
+            <objects>
+                <viewController storyboardIdentifier="MyProfileViewController" id="PDP-Vd-AcK" customClass="MyProfileViewController" customModule="EasySignInWithApple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fg8-el-kpB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Kih-rQ-BuO">
+                                <rect key="frame" x="28" y="72" width="358" height="93.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAL-W3-Z9r">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBX-53-ndf">
+                                        <rect key="frame" x="0.0" y="36.5" width="358" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJX-fa-2wG">
+                                        <rect key="frame" x="0.0" y="73" width="358" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WF-hH-2uF">
+                                        <rect key="frame" x="0.0" y="93.5" width="358" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vur-bd-lVo">
+                                <rect key="frame" x="172" y="193.5" width="70" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5As-cH-9Um"/>
+                                    <constraint firstAttribute="width" constant="70" id="lG6-ac-fyT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.92156862750000001" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutDidTap:" destination="PDP-Vd-AcK" eventType="touchUpInside" id="xDA-1o-fmN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ysH-UE-hlf" firstAttribute="trailing" secondItem="Kih-rQ-BuO" secondAttribute="trailing" constant="28" id="6JC-ms-d68"/>
+                            <constraint firstItem="vur-bd-lVo" firstAttribute="centerX" secondItem="Fg8-el-kpB" secondAttribute="centerX" id="Lii-vZ-jmR"/>
+                            <constraint firstItem="vur-bd-lVo" firstAttribute="top" secondItem="Kih-rQ-BuO" secondAttribute="bottom" constant="28" id="VXB-65-Y6g"/>
+                            <constraint firstItem="Kih-rQ-BuO" firstAttribute="top" secondItem="ysH-UE-hlf" secondAttribute="top" constant="28" id="ZO1-hS-XAV"/>
+                            <constraint firstItem="Kih-rQ-BuO" firstAttribute="leading" secondItem="ysH-UE-hlf" secondAttribute="leading" constant="28" id="aVu-zw-aJQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ysH-UE-hlf"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="MBX-53-ndf" id="z9c-lU-EyG"/>
+                        <outlet property="nameLabel" destination="LJX-fa-2wG" id="kPG-Xn-X5X"/>
+                        <outlet property="userIdLabel" destination="tAL-W3-Z9r" id="lLV-qR-GlZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cwN-ah-PVC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="138"/>
+        </scene>
+    </scenes>
+</document>
